@@ -1,0 +1,270 @@
+
+body {
+	font-family: Arial, sans-serif; /*наследуется всеми дочерними элементами*/
+	/*sans-serif - если не найдётся шрифт, будет использоваться любой другой без засечек*/
+	padding: 0; /*отступ внутреннего элемента*/
+	margin: 0; /*отступ наружного элемента*/
+	color: #222;
+	background: url(./img/header.png) no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*изображение на весь экран*/
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+/*Чтобы текст заголовков не наползал на менюшку*/
+
+header {
+	/*background: url(./img/header.png) no-repeat center top / cover;*/
+	/*height: 750px;*/
+	padding-bottom: 90px; /*отступ снизу после всех полей*/
+	/*background-size: cover;
+	margin: 0;
+	height: 100%;*/
+	/*width: auto;*/
+	/*height: 100vh;  */ /*высота хедера равна высоте экрана*/
+}
+
+div {/*
+	box-sizing: border-box;
+	с padding не будет меняться размер поля*/
+}
+
+.logo {
+	height: 200px;
+	width: 200px;
+	margin-top: 9px;
+	float: left; /*расположение по левому краю*/
+}
+
+
+
+.container{
+	width: 980px; /*Ширина контейнера, в котором будет инфа*/
+	/*border: 10px solid gold;*/ /*рамка контейнера*/
+	margin: 0 auto;/* Элемент становится ровно по центру*/
+}
+
+nav {
+	float: right;/* расположение по правому краю*/
+	margin-top: 50px;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+	display: block; 
+}
+
+
+.menu li /*все li внутри menu */{
+	float: left;
+	margin-right: 41px;
+	list-style-type: none; /*убрать маркеры списка*/
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;/* подчеркивание и проч.*/
+	/*text-transform: uppercase;*/ /*все буквы большими*/
+	font-size: 20px;
+}
+
+.title-one{
+	color: white;
+	font-family: Arial, sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center; /*выравнивание текста посередине*/
+	margin-top: 85px;
+	font-style: italic; /*курсив*/
+	font-weight: lighter; /*нежирный шрифт*/
+}
+
+h1 {
+	color: white;
+	font-family: Arial, sans-serif;
+	font-size: 75px;
+	text-align: center;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: lighter; 
+	margin: 15px;
+}
+
+.button {
+	background: #7F7F7F;
+	color: #fff;
+	border-radius: 4px; /*закругление*/
+	display: block;
+	width: 300px;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 20px;
+	margin-top: 25px;
+	text-shadow: -1px -1px 1px silver; /*выдавленный текст*/
+}
+
+.title {
+	padding-top: 50px;
+}
+
+h2.title {
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 10px 0;
+	padding: 30px 0;
+	font-style: italic;
+}
+
+p.title {
+	color: #2D2D2D;
+	text-align: center;
+	font-size: 17px;
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+}
+
+.test {
+	background: url(./img/roll.png)no-repeat top center;
+	height: auto;
+	width: auto;
+	padding: 0px; - текст будет примыкать к краям
+	/*padding: 10px;*/ /*- текст будет отступать от краёв на 10px (+увеличивается само поле)*/
+	/*padding-top: 10px;*/
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	display: block; /*элемент из строчного в блочный*/
+	/*display: inline; элемент из блочного в строчный*/
+} 	
+/*Белый прямоугольник сразу слева
+padding - отступ внутрь элемента
+margin - отступ наружу*/
+
+/**{
+	border: 1px solid red;
+}*/
+/*у всех элементов будет это свойство*/
+
+p.textabout {
+	color: black;
+	font-style: italic;
+	font-size: 15px;
+	float: right;
+	padding: 0;
+	margin: 0;
+	height: 200px;
+	width: 400px;
+	font-family: Arial, sans-serif;
+/*	line-height: 1.55em; интервал между буквами*/
+}
+
+.blockforthree {
+	margin-top: 30px;
+}
+
+
+.block-one {
+	/*border: 10px solid red;*/
+	width: 950px;
+	height: 700px;
+/*	margin-left: 100px;*/
+}
+
+.subblock-one {
+	/*padding: 0;*/
+/*	border: 10px solid blue;*/
+	width: 450px;
+	float: left; /*изображения не подряд, а рядом*/
+	text-align: center;
+	height: auto;
+	padding-right: 10px;
+
+}
+
+.ciri {
+	float: left;
+	margin-left: 0;
+	padding-left: 0;
+	padding-right: 10px;
+}
+
+h3.titlename{
+	color: black;
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+}
+
+.subblock-one:last-child {
+	float: right;
+  	width: 250px;
+}
+
+.subblock-one:first-child {
+	float: left;
+	width: 250px;
+}
+/*nth-child(2) - ко второму элементу*/
+
+.title2 {
+	padding-top: 50px;
+	color: white;
+/*	border: 3px solid white;*/
+}
+
+h2.title2 {
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+
+}
+
+p.title2 {
+	text-align: center;
+	font-size: 17px;
+	margin: 0;
+	padding: 10px 0;
+	font-style: italic;
+}
+
+.works img {
+	float: left;
+	height: 500px;
+	width: 300px;
+	margin-top: 20px;
+}
+
+.works img:last-child {
+	float: right;
+}
+
+.works img:nth-child(2){
+	margin-left: 35px;
+}
+
+footer{
+	text-align: center;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	text-align: center;
+	color: grey;
+}
